@@ -12,3 +12,22 @@ html{
 body{
   min-height: 100%;
 }
+.header__top{
+	display: block;
+	height: 45px;
+	background: #37a14c;
+	font-size: 12px;
+
+}
+.wraper{
+	max-width: 990px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.header__top a{
+	color: #fff;
+	text-decoration: none;
+	margin-top: 16px;
+	display: inline-block;
+}
+.header__top
