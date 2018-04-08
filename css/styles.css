@@ -11,13 +11,15 @@ html{
 }
 body{
   min-height: 100%;
+  font-family: Arial;
 }
 .header__top{
 	display: block;
 	min-height: 45px;
 	background: #37a14c;
-	font-size: 12px;
+	font-size: 16px;
 	text-align:center;
+	margin-bottom: 10px; 
 }
 .wraper{
 	max-width: 990px;
@@ -25,12 +27,11 @@ body{
 	padding: 0 10px;
 	height: inherit;
 }
-/*я не вкурсі чого одинакові за суттю елементи розміщаються по різному в контексті Вова підкажи теск в низу іконки вверху*/
 .header__top a{
 	color: #fff;
 	text-decoration: none;
-	line-height: 28px;
 	display: inline-block;
+	vertical-align: middle;
 	margin: 8px 3px 9px;
 }
 .header__bottom{
@@ -38,4 +39,62 @@ body{
 }
 .inline-block{
 	display: inline-block;
+	vertical-align: top;
+	padding-right: 10px;
+	
+}
+.skype-info:before{
+	content: "Скайп:";
+	font-size: 16px;
+}
+.contact-info{
+
+}
+.contact-info_item{
+	min-width: 265px;
+	padding-bottom: 10px;
+}
+.contact-info_item_name{
+	display: inline-block;
+	vertical-align: top;
+	width: 89px;
+	color: #0f680e;
+	font-size: 16px;
+}
+.contact-info_item_value{
+	display: inline-block;
+	
+}
+.contact-info_item_value a{
+	text-decoration: none;
+	color: #0f680e;
+	font-size: 20px;
+	font-weight: bold;
+}	
+a.icon.icon-icon-skype {
+    display: inline-block;
+    vertical-align: middle;
+}
+.skype-info a{
+	text-decoration: none;
+	font-style: italic;
+}
+.server-link{
+	display: block;
+	width: 136px;
+	height: 37px;
+	border-radius: 3px;
+	border-top: 1px solid #f3ec19;
+	border-bottom: 1px solid #293224 ;
+	background: #fdd008;
+	margin-bottom: 11px;
+	text-align: center;
+} 
+.server-link a{
+	text-decoration: none;
+	line-height: 16px;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 0;
+	display: block;
 }
