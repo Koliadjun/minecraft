@@ -19,13 +19,13 @@ body{
 	background: #37a14c;
 	font-size: 16px;
 	text-align:center;
-	margin-bottom: 10px; 
 }
 .wraper{
 	max-width: 990px;
 	margin: 0 auto;
-	padding: 0 10px;
-	height: inherit;
+}
+.margin-top10{
+	margin-top: 10px;
 }
 .header__top a{
 	color: #fff;
@@ -34,22 +34,15 @@ body{
 	vertical-align: middle;
 	margin: 8px 3px 9px;
 }
-.header__bottom{
 
-}
-.inline-block{
-	display: inline-block;
-	vertical-align: top;
-	padding-right: 10px;
-	
+.header__bottom{
+	text-align: center;
 }
 .skype-info:before{
 	content: "Скайп:";
 	font-size: 16px;
 }
-.contact-info{
 
-}
 .contact-info_item{
 	min-width: 265px;
 	padding-bottom: 10px;
@@ -69,7 +62,7 @@ body{
 	text-decoration: none;
 	color: #0f680e;
 	font-size: 20px;
-	font-weight: bold;
+	width: 179px;
 }	
 a.icon.icon-icon-skype {
     display: inline-block;
@@ -79,6 +72,7 @@ a.icon.icon-icon-skype {
 	text-decoration: none;
 	font-style: italic;
 }
+
 .server-link{
 	display: block;
 	width: 136px;
@@ -87,8 +81,8 @@ a.icon.icon-icon-skype {
 	border-top: 1px solid #f3ec19;
 	border-bottom: 1px solid #293224 ;
 	background: #fdd008;
-	margin-bottom: 11px;
 	text-align: center;
+	margin: 11px auto 0;
 } 
 .server-link a{
 	text-decoration: none;
@@ -97,4 +91,38 @@ a.icon.icon-icon-skype {
 	font-size: 16px;
 	padding: 10px 0;
 	display: block;
+}
+
+.navigation-menu{
+	font-size: 0;
+	margin-bottom: 10px; 
+	display: block;
+	min-height: 45px;
+}
+.navigation-menu__item{
+	text-align: center; 
+	border-right: 1px solid #57e974;
+	border-left: 1px solid #0f680e;
+	background: #51c066; /* Old browsers */
+	background: -moz-linear-gradient(top, #51c066 0%, #3d9b50 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #51c066 0%,#3d9b50 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #51c066 0%,#3d9b50 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51c066', endColorstr='#3d9b50',GradientType=0 ); /* IE6-9 */
+}
+.navigation-menu__item a{
+	display: block;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	height: 45px;
+	line-height: 45px;
+	text-decoration: none;
+}
+.navigation-menu__item.active{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4cda67+0,35a34b+100 */
+background: #4cda67; /* Old browsers */
+background: -moz-linear-gradient(top, #4cda67 0%, #35a34b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #4cda67 0%,#35a34b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #4cda67 0%,#35a34b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4cda67', endColorstr='#35a34b',GradientType=0 ); /* IE6-9 */
 }
