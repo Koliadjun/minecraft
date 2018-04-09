@@ -217,6 +217,7 @@ a.icon.icon-icon-skype {
 	height: 90px;
 	width: 232px;
 	padding: 14px 7px;
+	border-bottom: 1px solid #57e974;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#329545+0,45bc5c+100 */
 	background: #329545; /* Old browsers */
 	background: -moz-linear-gradient(top, #329545 0%, #45bc5c 100%); /* FF3.6-15 */
