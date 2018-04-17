@@ -42,8 +42,8 @@ body{
 /*.header__bottom{
 	text-align: center;
 }*/
-.skype-info:before{
-	content: "Скайп:";
+.skype-info p{
+	display: inline;
 	font-size: 16px;
 }
 
@@ -82,7 +82,7 @@ body{
 }
 
 
-.server-link{
+.btn_block{
 	text-decoration: none;
 	line-height: 16px;
 	color: #fff;
@@ -140,12 +140,88 @@ body{
 	background: linear-gradient(to bottom, #4cda67 0%,#35a34b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4cda67', endColorstr='#35a34b',GradientType=0 ); /* IE6-9 */
 }
+a.icon-menu {
+	position: fixed;
+    top: 25px;
+    right: 25px;
+    display: inline-flex;
+    border-radius: 50px;
+    border: 4px solid #fff ;
+    width: 50px;
+    height: 50px;
+    background: #37a14c;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu__opener{
+	position: fixed;
+    display: block;
+    z-index: 5;
+}
+
+.menu__opener span {
+    transition: all 500ms ease-in-out;
+    display: block;
+    width: 43%;
+    height: 11%;
+    background: white;
+    position: relative;
+    border-radius: 10px;
+    margin: 2px -8px 3px 0px;
+}
+
+.menu__opener span:before {
+    content: '';
+    height: 100%;
+    width: 21%;
+    background: white;
+    position: absolute;
+    border-radius: 100%;
+    margin-left: -84%;
+
+}
+.icon-menu-close span:before{
+	height: 0;
+	width: 0;
+}
+.icon-menu-close span{
+	width: 72%;
+	margin: 3px 0 3px 0;
+	right: 0;
+
+}
+
+.icon-menu-close span:nth-child(1){
+	transform: rotate(45deg);
+    top: 25%;
+}
+.icon-menu-close span:nth-child(2){
+	 background: transparent;
+}
+.icon-menu-close span:nth-child(3){
+	transform: rotate(-45deg);
+    bottom: 25%;
+}
 .sidebar_menu{
-	margin: 5px;
 	text-align: left;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	transition: .5s all ease;
+	z-index: 4;
 } 
+.sidebar_menu.active{
+	width: 100%;
+    left: 5px;
+    background: #fffffff2;
+
+}
 .sidebar_menu li{
 	list-style: none;
+	padding: 5px;
 }
 .sidebar_menu > li{
 	border-bottom: 1px solid #e7e7e7;
@@ -232,7 +308,7 @@ body{
 	color: white;
 }
 
-.prefooter .wraper > a{
+.prefooter .wraper > span{
 	margin: 10px 0;
 	color: #fff;
 	text-decoration: none;
@@ -240,6 +316,9 @@ body{
 }
 .prefooter .contact-info_item_name, .prefooter .contact-info_item_value a{
 	color: black;
+}
+.contact-info{
+    padding: 10px 0;
 }
 .prefooter{
 	/*text-align: center;*/
@@ -263,7 +342,7 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45bb5c', endColorstr='#3d9b50',GradientType=0 ); /* IE6-9 */
 }
 .flex-container{
-	padding: 10px 4px;
+	padding: 6px 4px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -272,6 +351,66 @@ body{
 .footer__text{
 	padding: 4px 23px;
 	font-size: 14px;
-	line-height: 57px;
+	line-height:36px;
 	text-align:left;
 }
+.clearfix:after{
+	content: '';
+	display: block;
+	width: 100%;
+	clear: both;
+}
+[class*="col-"]{
+	padding: 0 10px;
+}
+@media(min-width: 990px){
+	.pull-right-tablet{
+		float: right;
+	}
+	span.conection{
+		line-height: 45px;
+		left: 0;
+	}
+	.menu__opener{
+		display: none;
+		overflow: visible;
+	}
+	.sidebar_menu{
+		position: static;
+	}
+	.display-inl-block{
+		display: inline-block;
+
+	}
+	.navigation-menu{
+		background: #51c066; /* Old browsers */
+		background: -moz-linear-gradient(top, #51c066 0%, #3d9b50 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #51c066 0%,#3d9b50 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #51c066 0%,#3d9b50 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51c066', endColorstr='#3d9b50',GradientType=0 ); /* IE6-9 */
+	}
+	.navigation-menu li{
+		display: inline-block;
+		width: 193px;
+	}
+	.t-align-left{
+		text-align: left;
+	}
+	.logo-left,.contact-info,.btn{
+		padding-right: 10px;
+	}
+	.header > .heder__top > .wraper{
+		text-align: justify;
+	}
+	.flex-container{
+		 justify-content: space-between;
+	}
+	.col-tablet-1-4{
+		float: left;
+		width: 25%;
+	}
+	.col-tablet-3-4{
+		float: left;
+		width: 75%;
+	}
+	
