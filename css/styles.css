@@ -28,7 +28,7 @@ body{
 .margin-b-10{
 	margin-bottom: 10px;
 }
-.header__top a{
+.header__top a, .header__top span{
 	color: #fff;
 	text-decoration: none;
 	display: inline-block;
@@ -89,7 +89,6 @@ body{
 	font-size: 16px;
 	padding: 10px 0;
 	display: block;
-	width: 136px;
 	height: 37px;
 	border-radius: 3px;
 	border-top: 1px solid #f3ec19;
@@ -142,7 +141,7 @@ body{
 }
 a.icon-menu {
 	position: fixed;
-    top: 25px;
+    top: 40px;
     right: 25px;
     display: inline-flex;
     border-radius: 50px;
@@ -212,6 +211,8 @@ a.icon-menu {
 	left: -100%;
 	transition: .5s all ease;
 	z-index: 4;
+	padding: 0 10px;
+	margin-right: 10px;
 } 
 .sidebar_menu.active{
 	width: 100%;
@@ -258,6 +259,9 @@ a.icon-menu {
 }
 .content{
 	text-align: left;
+	border-bottom: 1px solid #e7e7e7;
+	padding-bottom: 39px;
+
 }
 .content h1{
 	margin-bottom: 21px;
@@ -267,19 +271,15 @@ a.icon-menu {
 	text-align:justify
 	
 }
-.content__top_img{
+	
+.content p{
+	font-size: 14px;
 	margin-bottom: 21px;
 }
-.content__top p{
-	font-size: 14px;
-}
-.content__top{
-	border-bottom: 1px solid #e7e7e7;
-	padding-bottom: 39px;
-}
-.content__bottom{
-	text-align: center;
-	padding: 5px;
+
+	
+.news{
+	font-size: 83px;
 }
 
 .news-block{
@@ -360,9 +360,9 @@ a.icon-menu {
 	width: 100%;
 	clear: both;
 }
-[class*="col-"]{
-	padding: 0 10px;
-}
+/*[class*="col-"]{
+	margin: 0 10px;
+}*/
 @media(min-width: 990px){
 	.pull-right-tablet{
 		float: right;
@@ -370,6 +370,9 @@ a.icon-menu {
 	span.conection{
 		line-height: 45px;
 		left: 0;
+	}
+	.btn{
+		width: 136px;
 	}
 	.menu__opener{
 		display: none;
